@@ -1,0 +1,281 @@
+.inicio {
+  background-image: url("../../assets/Paisaje.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  height: 675px;
+  margin-bottom: 0;
+  /* Agrega esta línea para eliminar el margen inferior */
+
+}
+
+.img {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  }
+
+.titulo {
+  color: white;
+  font-family: 'Oswald';
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 40pt;
+  padding-left: 100px;
+}
+
+.servicios {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.servicios .titulo {
+  color: #515151;
+  margin-bottom: 10px;
+  flex: 1 1 100%;
+  text-align: center;
+  margin-left: -95px;
+}
+
+.linea {
+  margin: 0 auto;
+  flex: 1 1 100%;
+}
+
+
+hr {
+  width: 135px;
+  margin: 0 auto;
+  border: 1px solid #ff900e;
+  margin-bottom: 50px;
+}
+
+.caja {
+  width: 45%;
+  height: 150px;
+  margin: 0 30px 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-family: 'Oswald';
+}
+
+.caja:hover {
+  /* Estilos al hacer hover sobre la caja */
+  transform: scale(1.1);
+  /* Ejemplo de escalar la caja al 110% */
+  transition: transform 0.3s ease;
+  /* Transición suave de la animación */
+}
+
+.imagenCaja {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenido {
+  width: 50%;
+}
+
+.imgCaja {
+  width: 100px;
+  height: 100px;
+}
+
+.tituloCaja {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16pt;
+}
+
+.textoCaja {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14pt;
+  font-weight: lighter;
+  padding: 0 20px 0 20px;
+}
+
+
+
+.imagenesOpciones {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.imgOp {
+  width: 25%;
+  height: 300px;
+}
+
+.imgOp:hover {
+  /* Estilos al hacer hover sobre la imagen */
+  transform: scale(1.1);
+  /* Ejemplo de escalar la imagen al 120% */
+  transition: transform 0.3s ease;
+  /* Transición suave de la animación */
+}
+
+
+
+
+
+
+
+
+.about {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linea2 {
+  margin-top: 15px;
+  width: 320px;
+}
+
+
+.aboutContent {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  /* Cambia "align-items: center" a "align-items: flex-start" */
+  gap: 20px;
+  /* Agrega un espacio entre los elementos */
+}
+
+.about .info .titulo {
+  width: 100%;
+  color: #000;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.info {
+  width: 45%;
+  padding: 20px;
+
+  text-align: center;
+}
+
+.logo {
+  width: 45%;
+  display: flex;
+  /* Agrega display flex al contenedor del logo */
+  justify-content: center;
+  /* Centra horizontalmente el logotipo */
+  align-items: center;
+  /* Centra verticalmente el logotipo */
+}
+
+.imgLogo {
+  width: 457px;
+}
+
+
+.texto {
+  margin: 0 auto;
+  width: 60%;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+  .inicio {
+    height: 25vh;
+  }
+
+  .img {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+  }
+
+  .titulo {
+    font-size: 18pt;
+    padding-left: 40px;
+  }
+
+  .texto {
+    padding: 0 10px 0 10px;
+
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .servicios {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .servicios .titulo {
+    margin-left: -40px;
+  }
+
+
+  .caja {
+    width: 80%;
+    height: auto;
+    margin: 0 0 10px 0;
+    padding: 10px 0 30px 0;
+    flex-wrap: wrap;
+  }
+
+  .tituloCaja {
+    margin-top: 20px;
+  }
+
+  .imagenCaja {
+    /* ocupe todo el ancho del contenedor */
+    width: 100%;
+  }
+
+  .contenido {
+    width: 100%;
+  }
+
+  .linea2 {
+    margin-top: 15px;
+    width: 300px;
+    width: 140px;
+  }
+
+  .texto {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+
+  .imgOp {
+    width: 100%;
+    height: 300px;
+  }
+
+}
