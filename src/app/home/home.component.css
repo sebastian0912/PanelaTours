@@ -1,31 +1,27 @@
 .inicio {
   background-image: url("../../assets/Paisaje.png");
-  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100% auto;
-  height: 675px;
-  margin-bottom: 0;
-  /* Agrega esta línea para eliminar el margen inferior */
-
+  background-size: cover;
+  height: 100vh;
+  margin-bottom: 0; /* Elimina el margen inferior si es necesario */
 }
 
 .img {
   display: flex;
   align-items: center;
-  height: 80vh;
-  }
+  height: 100%;
+}
 
 .titulo {
   color: white;
-  font-family: 'Oswald';
-  color: #ffffff;
+  font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 40pt;
   padding-left: 100px;
 }
 
 .servicios {
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -56,38 +52,37 @@ hr {
 }
 
 .caja {
-  width: 45%;
-  height: 150px;
+  width: 30%;
+  height: 250px;
   margin: 0 30px 10px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   font-family: 'Oswald';
+  padding: 10px;
+  z-index: auto;
 }
 
 .caja:hover {
-  /* Estilos al hacer hover sobre la caja */
   transform: scale(1.1);
-  /* Ejemplo de escalar la caja al 110% */
   transition: transform 0.3s ease;
-  /* Transición suave de la animación */
 }
 
 .imagenCaja {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .contenido {
-  width: 50%;
+  width: 60%;
 }
 
 .imgCaja {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }
 
 .tituloCaja {
@@ -102,6 +97,8 @@ hr {
   font-size: 14pt;
   font-weight: lighter;
   padding: 0 20px 0 20px;
+  
+
 }
 
 
@@ -113,6 +110,7 @@ hr {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  height: auto;
 }
 
 .imgOp {
@@ -136,14 +134,16 @@ hr {
 
 
 .about {
-  margin-top: 0;
   margin-bottom: 0;
   width: 90%;
-  height: 500px;
+  height: auto;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+
 }
 
 .linea2 {
@@ -158,33 +158,36 @@ hr {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  /* Cambia "align-items: center" a "align-items: flex-start" */
-  gap: 20px;
-  /* Agrega un espacio entre los elementos */
 }
 
-.about .info .titulo {
+.about .titulo {
   width: 100%;
-  color: #000;
+  color: #515151;
   padding: 0;
   margin: 0 auto;
+  flex: 1 1 100%;
+  width: 100%;
+  text-align: center;
+  
+  
 }
 
 .info {
-  width: 45%;
+  width: 90%;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: -70px;
 
-  text-align: center;
 }
 
 .logo {
-  width: 45%;
+  width: 40%;
   display: flex;
-  /* Agrega display flex al contenedor del logo */
   justify-content: center;
-  /* Centra horizontalmente el logotipo */
   align-items: center;
-  /* Centra verticalmente el logotipo */
 }
 
 .imgLogo {
@@ -195,7 +198,12 @@ hr {
 .texto {
   margin: 0 auto;
   width: 60%;
+  font-size: 14pt;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.2;
 }
+
 
 
 

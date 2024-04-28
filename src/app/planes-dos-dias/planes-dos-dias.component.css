@@ -1,0 +1,159 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    padding-top: 80px;
+  }
+  
+  .day-plan {
+    width: 80%;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .images-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 30%;
+  }
+  
+  .main-image {
+    width: 100%;
+    display: block;
+  }
+  
+  .text-container {
+    height: auto;
+    width: 95%;
+  }
+  
+  .day-plan h2 {
+    color: #000000;
+    font-size: 24px;
+  }
+  
+  .day-plan p {
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  .read-more {
+    text-decoration: none;
+    color: #0066cc;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .contenido {
+    width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .side-images {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .side-image {
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* hover side image */
+  .side-image:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+  }
+  
+  /* li */
+  li {
+    list-style: none;
+    padding-left: 20px;
+  }
+  
+  h2,
+  h3,
+  h4,
+  p,
+  li {
+    line-height: 1.7;
+  }
+  
+  @keyframes show {
+    from {
+      opacity: 0;
+      scale: 25%;
+    }
+  
+    to {
+      opacity: 1;
+      scale: 100%;
+    }
+  }
+  
+  img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+  
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+    z-index: -1;
+  }
+  
+
+  .whatsapp-btn {
+    background-color: #329757; /* Color de fondo WhatsApp */
+    color: white; /* Color del texto */
+    padding: 10px 15px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cursor en forma de mano al pasar el ratón */
+    text-align: center; /* Texto centrado */
+    display: inline-block; /* Se comporta como un botón */
+    margin: 10px 0; /* Margen superior e inferior */
+    transition: background-color 0.3s; /* Transición suave al cambiar el color de fondo */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    justify-content: center;
+  }
+  
+  
+  .whatsapp-btn:hover {
+    background-color: #128C7E; /* Cambiar el color al pasar el ratón */
+  }
+  
+  .whatsapp-btn:active {
+    background-color: #075E54; /* Cambiar el color al hacer clic */
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra interior para efecto de "presionado" */
+  }
+  
+  /* Si utilizas FontAwesome para el icono */
+  .fa-whatsapp {
+    font-size: 20px; /* Tamaño del icono de WhatsApp */
+  }
+  

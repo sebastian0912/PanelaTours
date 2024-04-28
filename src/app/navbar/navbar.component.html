@@ -2,11 +2,11 @@
   <nav id="menu">
     <input type="checkbox" id="responsive-menu"><label></label>
     <ul>
-      <li><a href="">Contacto</a></li>
+      <li><a (click)="sendWhatsAppMessage('Hola \n Vi la pagina web y estoy interesado en tener mas informacion para para poder reservar')"> Contacto </a></li>
       <li><a class="dropdown-arrow">Planes</a>
         <ul class="sub-menus">
-          <li><a href="">Planes 1 dia</a></li>
-          <li><a href="">Planes 2 dias</a></li>
+          <li><a [routerLink]="['/planes-1-dia']">Planes 1 dia</a></li>
+          <li><a [routerLink]="['/planes-2-dias']">Planes 2 dias</a></li>
         </ul>
       </li>
       <li><a href="">Inicio</a></li>
